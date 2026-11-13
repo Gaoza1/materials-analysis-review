@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>材料分析测试方法复习包</title>
+  <style>
+    :root {
+      --paper: #fbf3df;
+      --card: #fffaf0;
+      --ink: #28231d;
+      --muted: #756b5d;
+      --line: #dfd1b5;
+      --accent: #2f61df;
+      --accent-soft: #eaf0ff;
+      --gold: #bc882f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(255,255,255,.8), transparent 30%),
+        linear-gradient(145deg, #fdf7e7, var(--paper));
+      font-family: "Noto Serif SC", "Songti SC", "Microsoft YaHei", serif;
+    }
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0 80px;
+    }
+    header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--gold);
+      font: 700 13px/1.4 "Microsoft YaHei", sans-serif;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 64px);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+    }
+    .lede {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font: 16px/1.9 "Microsoft YaHei", sans-serif;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 28px 0 0;
+    }
+    .stats span {
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.5);
+      font: 600 13px/1 "Microsoft YaHei", sans-serif;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .card {
+      display: block;
+      min-height: 210px;
+      padding: 26px;
+      color: inherit;
+      text-decoration: none;
+      background: rgba(255,250,240,.9);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 14px 36px rgba(82, 59, 22, .06);
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #bfa574;
+      box-shadow: 0 20px 44px rgba(82, 59, 22, .11);
+    }
+    .number {
+      color: var(--gold);
+      font: 800 13px/1 "Microsoft YaHei", sans-serif;
+      letter-spacing: .12em;
+    }
+    h2 {
+      margin: 18px 0 10px;
+      font-size: 25px;
+      line-height: 1.35;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font: 14px/1.8 "Microsoft YaHei", sans-serif;
+    }
+    .open {
+      display: inline-block;
+      margin-top: 23px;
+      color: var(--accent);
+      font: 700 14px/1 "Microsoft YaHei", sans-serif;
+    }
+    .guide {
+      margin-top: 30px;
+      padding: 22px 24px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      color: #34456e;
+      font: 14px/1.9 "Microsoft YaHei", sans-serif;
+    }
+    .guide strong { color: #17336f; }
+    footer {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font: 12px/1.8 "Microsoft YaHei", sans-serif;
+    }
+    @media (max-width: 760px) {
+      main { width: min(100% - 24px, 640px); padding-top: 34px; }
+      .grid { grid-template-columns: 1fr; }
+      .card { min-height: 0; padding: 22px; }
+      h2 { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Materials Characterization Study Pack</p>
+      <h1>材料分析测试方法<br>电子显微与能谱白话复习包</h1>
+      <p class="lede">
+        六份讲义已经拆成复习笔记、原页对照和练习题。每节先用一句白话讲清核心，再补原因和术语；卡住时可以直接对照右侧原页，最后用题目检查有没有真的学会。
+      </p>
+      <div class="stats">
+        <span>6 份讲义</span>
+        <span>170 页原页</span>
+        <span>53 个知识组件</span>
+        <span>53 道练习</span>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="章节列表">
+      <a class="card" href="lecture03.html">
+        <span class="number">LECTURE 03</span>
+        <h2>电子显微技术</h2>
+        <p>方法地图、阿贝成像、瑞利判据、电子波长、磁透镜、像差、TEM 镜筒与薄样要求。</p>
+        <span class="open">打开复习页</span>
+      </a>
+      <a class="card" href="lecture04.html">
+        <span class="number">LECTURE 04</span>
+        <h2>TEM 电子衍射</h2>
+        <p>电子散射、倒易杆、rd=Lλ、选区衍射、单晶标定、高阶劳厄带、菊池线与 CBED。</p>
+        <span class="open">打开复习页</span>
+      </a>
+      <a class="card" href="lecture05.html">
+        <span class="number">LECTURE 05</span>
+        <h2>衍衬像分析</h2>
+        <p>质厚衬度、明暗场、运动学理论、消光距离、等厚与等倾条纹、缺陷不可见判据、高分辨像。</p>
+        <span class="open">打开复习页</span>
+      </a>
+      <a class="card" href="lecture06.html">
+        <span class="number">LECTURE 06</span>
+        <h2>扫描电子显微镜</h2>
+        <p>二次电子、背散射电子、吸收电子、X 射线、荷电效应、分辨率、EBSD 与 ESEM。</p>
+        <span class="open">打开复习页</span>
+      </a>
+      <a class="card" href="lecture07.html">
+        <span class="number">LECTURE 07</span>
+        <h2>能谱技术</h2>
+        <p>电子壳层、EDS、WDS、EPMA、EELS、拉曼散射以及拉曼和红外的选择规则。</p>
+        <span class="open">打开复习页</span>
+      </a>
+      <a class="card" href="lecture08.html">
+        <span class="number">LECTURE 08</span>
+        <h2>课程总结</h2>
+        <p>晶体学、XRD、电子光学、衍射与成像、能谱技术，以及综合分析方法选择矩阵。</p>
+        <span class="open">打开复习页</span>
+      </a>
+    </section>
+
+    <div class="guide">
+      <strong>使用方式：</strong>进入任意一章后，顶部可在「知识清单」和「章节测试」之间切换。标题旁的蓝色页签可以跳到右侧原始讲义页；测试完成后点击「一键批改」，解析和易错提醒会自动展开。
+    </div>
+
+    <footer>
+      复习页基于提供的六份课程讲义整理，页面中的原始幻灯片对照来自对应 PDF。公式由 MathJax 在线渲染。
+    </footer>
+  </main>
+</body>
+</html>
